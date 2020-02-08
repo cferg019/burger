@@ -1,0 +1,19 @@
+body {
+    background-color: bisque;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    height: auto;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 64px;
+}
+
+textarea {
+    resize: none;
+    margin: 20px;
+}
