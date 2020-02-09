@@ -1,6 +1,6 @@
-$(document).ready(function() {
-    
-  $(".devour-form").on("submit", function(event) {
+$(document).ready(function () {
+
+  $(".devour-form").on("submit", function (event) {
     event.preventDefault();
 
     var burger_id = $(this).children(".burger_id").val();
@@ -8,10 +8,22 @@ $(document).ready(function() {
     $.ajax({
       method: "PUT",
       url: "/burgers/" + burger_id
-    }).then(function(data) {
+    }).then(function (data) {
       // reload page to display devoured burger in proper column
       location.reload();
     });
 
   });
+
+  $("#burger-submit-form").on("submit", function (event) {
+
+    if ($("#enter-text").val() === "") {
+      event.preventDefault();
+      $("#error").text("Please enter a burger name.")
+    }
+
+
+
+  })
 });
+

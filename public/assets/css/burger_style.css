@@ -4,16 +4,51 @@ body {
 }
 
 img {
-    width: 250px;
+    width: 230px;
     height: auto;
 }
 
 h1 {
     margin-top: 0;
     font-size: 64px;
+    margin-bottom: 30px;
 }
 
 textarea {
     resize: none;
     margin: 20px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.text-center {
+    padding: 0;
+}
+
+.form-control {
+    margin-left: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#enter-text {
+    width: 400px;
+    margin: 10px;
+    display: inline-block;
+}
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+p {
+    margin: 20px 0 0 0;
+}
+
+#error {
+    font-weight: bold;
+    color: red;
 }
